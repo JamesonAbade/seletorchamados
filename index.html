@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Chamados UESB - Jameson Abade</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .item {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="item" data-link="https://www.google.com/search?q=CHAMADOS+UESB+-+ITAPETINGA">
+    <div class="quote">
+      <p>CHAMADOS UESB - ITAPETINGA<span>chamados.uesb.br/itapetinga</span></p>
+    </div>
+  </div>
+  <div class="item" data-link="https://www.google.com/search?q=CHAMADOS+UESB+-+VIT%C3%93RIA+DA+CONQUISTA">
+    <div class="quote">
+      <p>CHAMADOS UESB - VITÓRIA DA CONQUISTA<span>chamados.uesb.br/vitoriadaconquista</span></p>
+    </div>
+  </div>
+  <div class="item" data-link="https://www.google.com/search?q=CHAMADOS+UESB+-+JEQUI%C3%89">
+    <div class="quote">
+      <p>CHAMADOS UESB - JEQUIÉ&nbsp;<span>chamados.uesb.br/jequie</span></p>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script>
+  // Adiciona evento de clique aos elementos com a classe "item"
+  const itemElements = document.querySelectorAll('.item');
+  itemElements.forEach(element => {
+    element.addEventListener('click', () => {
+      const link = element.getAttribute('data-link');
+      window.location.href = link;
+    });
+  });
+</script>
+</body>
+</html>
